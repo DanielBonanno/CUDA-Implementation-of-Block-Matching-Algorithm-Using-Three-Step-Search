@@ -6,7 +6,7 @@ Assignment 1 contains the source code for a serial impelementation of a Block Ma
 
 Assignment 2 contains:
 * An optimised version of the serial implementaion of Assignment 1
-* A parallelised verision of the same algorithm using CUDA-Implementation-of-Block-Matching-Algorithm-Using-Three-Step-Search
+* A parallelised verision of the same algorithm using CUDA
 * An optimised, parallelised version of the algorithm
 
 as well as a report corresponding to this work.
