@@ -1,0 +1,15 @@
+14:42:24 **** Incremental Build of configuration Release for project dbon0031_Parallel_Optimized ****
+make all 
+make: Warning: File `objects.mk' has modification time 3.8e+02 s in the future
+Building file: ../Main.cu
+Invoking: NVCC Compiler
+/usr/local/cuda-7.5/bin/nvcc -DNDEBUG -O3 -gencode arch=compute_35,code=sm_35  -odir "." -M -o "Main.d" "../Main.cu"
+/usr/local/cuda-7.5/bin/nvcc -DNDEBUG -O3 --compile --relocatable-device-code=false -gencode arch=compute_35,code=compute_35 -gencode arch=compute_35,code=sm_35  -x cu -o  "Main.o" "../Main.cu"
+Finished building: ../Main.cu
+ 
+Building target: dbon0031_Parallel_Optimized
+Invoking: NVCC Linker
+/usr/local/cuda-7.5/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_35,code=compute_35 -gencode arch=compute_35,code=sm_35 -link -o  "dbon0031_Parallel_Optimized"  ./Main.o   
+Finished building target: dbon0031_Parallel_Optimized
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.

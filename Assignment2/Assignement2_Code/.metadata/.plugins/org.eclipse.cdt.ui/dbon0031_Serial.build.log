@@ -1,0 +1,18 @@
+14:31:38 **** Incremental Build of configuration Release for project dbon0031_Serial ****
+make all 
+make: Warning: File `objects.mk' has modification time 3.8e+02 s in the future
+Building file: ../Main.cpp
+Invoking: NVCC Compiler
+/usr/local/cuda-7.5/bin/nvcc -DNDEBUG -O3 -gencode arch=compute_35,code=sm_35  -odir "." -M -o "Main.d" "../Main.cpp"
+/usr/local/cuda-7.5/bin/nvcc -DNDEBUG -O3 --compile  -x c++ -o  "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: dbon0031_Serial
+Invoking: NVCC Linker
+/usr/local/cuda-7.5/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_35,code=compute_35 -gencode arch=compute_35,code=sm_35 -link -o  "dbon0031_Serial"  ./Main.o   
+Finished building target: dbon0031_Serial
+ 
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+14:31:40 Build Finished (took 1s.414ms)
+
